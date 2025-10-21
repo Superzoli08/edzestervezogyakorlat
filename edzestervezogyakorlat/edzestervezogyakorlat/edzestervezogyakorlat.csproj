@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D29CAC8-52C9-4AEB-8514-EA4164F56565}</ProjectGuid>
+    <ProjectGuid>{434AFEA4-A0D0-4F9B-9330-9E4F2C84396F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>edzestervezogyakorlat</RootNamespace>
     <AssemblyName>edzestervezogyakorlat</AssemblyName>
@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\Desktop\Házi\11\dagadtgeciszex\edzestervezogyakorlat\Program.cs">
-      <Link>Program.cs</Link>
-    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

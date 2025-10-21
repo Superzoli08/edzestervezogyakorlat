@@ -70,6 +70,75 @@ namespace edzestervezogyakorlat
 
                 Console.WriteLine("Csak 1, 2, vagy 3 lehet");
             }
+
+            // Alap értékek beállítása
+            if (cel_index == 1)
+            {
+                edzes_alap_hossz = 45;
+                kaloria_szorzo = 0.12;
+            }
+            else if (cel_index == 2)
+            {
+                edzes_alap_hossz = 40;
+                kaloria_szorzo = 0.10;
+            }
+            else
+            {
+                edzes_alap_hossz = 30;
+                kaloria_szorzo = 0.15;
+            }
+
+            // Heti edzésnapok bekérése
+            int napok_szama = 0;
+            while (true)
+            {
+                Console.Write("Hány napot szeretne edzeni a héten (1–7): ");
+                string be_napok = Console.ReadLine();
+                if (int.TryParse(be_napok, out napok_szama) && napok_szama >= 1 && napok_szama <= 7)
+                    break;
+
+                Console.WriteLine("Érvénytelen nap! 1 és 7 közötti számot adjon meg.");
+            }
+
+            // Napok erősségei
+            int[] nap_erossegek = new int[napok_szama];
+            for (int i = 0; i < napok_szama; i++)
+            {
+                while (true)
+                {
+                    Console.Write($"Kérem a(z) {i + 1}. nap erősségi szintjét (1–5): ");
+                    string be_szint = Console.ReadLine();
+                    if (int.TryParse(be_szint, out int szint) && szint >= 1 && szint <= 5)
+                    {
+                        nap_erossegek[i] = szint;
+                        break;
+                    }
+
+                    Console.WriteLine("Érvénytelen erősség! 1 és 5 közötti számot adjon meg.");
+
+                }
+
+            }
+
+            double heti_ossz_ido = 0;
+            for (int i = 0; i < napok_szama; i++)
+            {
+                double napi_ido = edzes_alap_hossz * (1 + 0.1 * nap_erossegek[i]);
+                heti_ossz_ido += napi_ido;
+            }
+            double heti_kaloria = suly_kg * heti_ossz_ido * kaloria_szorzo;
+            Console.WriteLine("\n--- Eredmények ---");
+            Console.WriteLine($"Név: {vezetek_nev} {kereszt_nev}");
+            Console.WriteLine($"Cél: {cel_lista[cel_index - 1]}");
+            Console.WriteLine($"Heti edzésidő: {heti_ossz_ido:F2} perc");
+            Console.WriteLine($"Heti elégetett kalória: {heti_kaloria:F2} kcal");
+
+
+            Console.ReadKey();
+
         }
     }
 }
+        
+    
+

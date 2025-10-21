@@ -1,2 +1,0 @@
-# edzestervezogyakorlat
-edzestervezogyakorlat ngl

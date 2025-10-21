@@ -1,0 +1,7 @@
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\bin\Debug\edzestervezogyakorlat.exe.config
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\bin\Debug\edzestervezogyakorlat.exe
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\bin\Debug\edzestervezogyakorlat.pdb
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\obj\Debug\edzestervezogyakorlat.csproj.AssemblyReference.cache
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\obj\Debug\edzestervezogyakorlat.csproj.CoreCompileInputs.cache
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\obj\Debug\edzestervezogyakorlat.exe
+C:\Users\b3vetzol\source\repos\edzestervezogyakorlat\edzestervezogyakorlat\edzestervezogyakorlat\obj\Debug\edzestervezogyakorlat.pdb

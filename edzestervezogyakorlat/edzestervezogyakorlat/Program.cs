@@ -132,7 +132,7 @@ namespace edzestervezogyakorlat
             }
             double heti_kaloria = suly_kg * heti_ossz_ido * kaloria_szorzo;
             Console.WriteLine();
-            Console.WriteLine("--- Eredmények ---");
+            Console.WriteLine("Edzési Adatok:");
             Console.WriteLine($"Név: {vezetek_nev} {kereszt_nev}");
             Console.WriteLine($"Cél: {cel_lista[cel_index - 1]}");
             Console.WriteLine($"Heti edzésidő: {heti_ossz_ido:F2} perc");

@@ -66,22 +66,26 @@ namespace edzestervezogyakorlat
                 Console.Write("Adja meg a célt ( 1-3 ): ");
                 string be_cel = Console.ReadLine();
                 if (int.TryParse(be_cel, out cel_index) && cel_index >= 1 && cel_index <= 3)
+
                     break;
 
                 Console.WriteLine("Csak 1, 2, vagy 3 lehet");
             }
 
-            // Alap értékek beállítása
+            // Alap edzésidő és kalóriaszorzó beállítása a cél alapján
             if (cel_index == 1)
             {
                 edzes_alap_hossz = 45;
                 kaloria_szorzo = 0.12;
             }
+
             else if (cel_index == 2)
+
             {
                 edzes_alap_hossz = 40;
                 kaloria_szorzo = 0.10;
             }
+
             else
             {
                 edzes_alap_hossz = 30;
@@ -127,7 +131,8 @@ namespace edzestervezogyakorlat
                 heti_ossz_ido += napi_ido;
             }
             double heti_kaloria = suly_kg * heti_ossz_ido * kaloria_szorzo;
-            Console.WriteLine("\n--- Eredmények ---");
+            Console.WriteLine();
+            Console.WriteLine("--- Eredmények ---");
             Console.WriteLine($"Név: {vezetek_nev} {kereszt_nev}");
             Console.WriteLine($"Cél: {cel_lista[cel_index - 1]}");
             Console.WriteLine($"Heti edzésidő: {heti_ossz_ido:F2} perc");
@@ -139,6 +144,4 @@ namespace edzestervezogyakorlat
         }
     }
 }
-        
-    
 
